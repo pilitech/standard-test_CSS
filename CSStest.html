@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSStest</title>
+  <!-- CSS追加 -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="CSS/CSStest.css" />
+</head>
+
+<body>
+
+  <div class="firstview">
+    <div class="firstview_img">
+      <img src="img_HTMLtest/firstview.jpg" alt="firstview" width="100%">
+    </div>
+    <h1 class="firstview_ttl">キャッチコピー</h1>
+  </div>
+  <article class="about">
+    <h2>About</h2>
+      <p class="about_text">プCOACHTECH(コーチテック)はフリーランス特化型のオンラインコーチングプログラミングスクールです。<br>プログラミング未経験の方でも、<strong>「独自の学習ノウハウ」</strong>でフリーランスエンジニアを目指すことができます。</p>
+  </article>
+
+  <article class="blog">
+    <h2>ブログ</h2>
+    <div class="blog_main">
+      <section class="blog_content">
+        <img src="img_HTMLtest/blog__eyecatch1.jpg" alt="eyecatch1" width="350px" height="auto">
+        <p class="blog_text">コーチテックブログのタイトルがここには入ります。</p>
+      </section>
+      <section class="blog_content">
+        <img src="img_HTMLtest/blog__eyecatch2.jpg" alt="eyecatch2" width="350px" height="auto">
+        <p class="blog_text">コーチテックブログのタイトルがここには入ります。</p>
+      </section>
+      <section class="blog_content">
+        <img src="img_HTMLtest/blog__eyecatch3.jpg" alt="eyecatch3" width="350px" height="auto" >
+        <p class="blog_text">コーチテックブログのタイトルがここには入ります。</p>
+      </section>
+    </div>
+  </article>
+
+  <article class="contact">
+    <h2>問い合わせ</h2>
+    <form class="form" name="contact" method="POST">
+      <table>
+        <tr>
+          <th>名前</th>
+          <td><input type="text" name="name" class="form_input"></td>
+        </tr>
+        <tr>
+          <th>メールアドレス</th>
+          <td><input type="email" name="email" class="form_input"></td>
+        </tr>
+        <tr>
+          <th>用件</th>
+          <td><select name="title">
+            <option value>広告掲載について</option>
+          </select></td>
+        </tr>
+        <tr>
+          <th>内容</th>
+          <td><textarea name="content" rows="10" class="form_input_content"></textarea></td>
+        </tr>
+      </table>
+      <div class="btn">
+        <input type="reset" class="form_btn_clr" value="削除">
+        <input type="submit" class="form_btn_send" value="送信">
+      </div>
+    </form>
+  </article>
+</body>
+</html>
